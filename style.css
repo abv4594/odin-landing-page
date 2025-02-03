@@ -5,6 +5,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Roboto';
+    max-height: 90vh;
 }
 
 ul {
@@ -53,6 +54,7 @@ a {
     height: 70px;
     color: #f9faf8;  
     display: flex;
+    flex-shrink: 0;
     justify-content: space-between;
     align-items: center;
 }
@@ -85,21 +87,22 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 50%;
 }
 
 .heroTitle {
     font-weight: bold;
 }
 
-.heroImg {
+img {
+    display: block;
     height: 200px;
-    width: 550px;
-    flex-shrink: 0;
-    background-color: gray;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 50%;
+    object-fit: cover;
+    
 }
+
+
 
 .heroBtn {
     width: 130px;
@@ -117,7 +120,7 @@ a {
     flex-direction: column;
     align-items: center;
     gap: 50px;
-    padding: 50px 350px 50px 350px;
+    padding: 50px 300px 50px 300px;
     
 }
 
@@ -220,6 +223,7 @@ a {
 
 .footer-container {
     height: 70px;
+    flex-shrink: 0;
     display: flex;
     justify-content: center;
     align-items: center;
